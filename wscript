@@ -10,7 +10,7 @@ def build(bld):
 #    linkerpath=os.path.abspath(os.path.join('..', 'elf-loader','ldso'))
     bld.build_a_script('dce', needed = ['core', 'internet', 'dce', 'point-to-point', 'netanim' ],
 				  target='bin/dce-proxy',
-				  source=['dce-proxy.cc', 'misc-tools.cc'],
+				  source=['proxyA.cc', 'misc-tools.cc'],
 #				  linkflags=['-Wl,--dynamic-linker=' + linkerpath ]
 #				  linkflags=['-L/usr/local/lib'],
 #				  lib=['foolib']
